@@ -19,7 +19,7 @@ signed main() {
   
   int TEST = 1;
   cin >> TEST;
-  while (TESt --> 0) {
+  while (TEST --> 0) {
     solve();
   }
   return 0;
