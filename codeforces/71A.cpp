@@ -10,7 +10,7 @@ void solve() {
   }
   else{
     cout << s << "\n";
-  }  
+  }
 }
 
 signed main() {
