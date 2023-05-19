@@ -6,7 +6,7 @@ void solve() {
   int n;
   cin >> n;
   string s;
-  cin > s;
+  cin >> s;
   sort(s.begin(), s.end());
   if (s == "Timru") {
     cout << "YES" << '\n';
@@ -21,7 +21,7 @@ signed main() {
   cin.tie(nullptr); cout.tie(nullptr);
 
   int TEST = 1;
-//  cin >> TEST;
+  cin >> TEST;
   while (TEST --> 0) {
     solve();
   }
