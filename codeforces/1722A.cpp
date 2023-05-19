@@ -21,7 +21,7 @@ signed main() {
   cin.tie(nullptr); cout.tie(nullptr);
 
   int TEST = 1;
-  cin >> TEST;
+//  cin >> TEST;
   while (TEST --> 0) {
     solve();
   }
