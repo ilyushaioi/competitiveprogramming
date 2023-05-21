@@ -8,7 +8,7 @@ void solve() {
   int n, m;
   cin >> n >> m;
   int res = 0;
-  if (m % 2 == 0) {
+  if (m % 2 == 1) {
     if (n % 2 == 0) {
       res = (m / 2) * n + n / 2;
     }
