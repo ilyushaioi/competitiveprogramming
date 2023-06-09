@@ -11,3 +11,4 @@ int binpow(int a, int n) {
 	}
 }
 // http://e-maxx.ru/algo/binary_pow
+// https://ru.algorithmica.org/cs/algebra/binpow/
