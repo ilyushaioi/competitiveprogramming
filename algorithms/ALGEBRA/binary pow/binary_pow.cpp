@@ -10,5 +10,18 @@ int binpow(int a, int n) {
 		return b * b;
 	}
 }
+
+
+int binpow(int a, int n) {
+    int res = 1;
+    while (n != 0) {
+        if (n & 1)
+            res = res * a;
+        a = a * a;
+        n >>= 1;
+    }
+    return res;
+}
+
 // http://e-maxx.ru/algo/binary_pow
 // https://ru.algorithmica.org/cs/algebra/binpow/
