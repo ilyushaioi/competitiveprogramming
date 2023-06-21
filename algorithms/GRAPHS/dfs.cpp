@@ -31,3 +31,27 @@ void dfs (int v) {
 }
 
 //https://e-maxx.ru/algo/dfs
+
+
+//https://ru.algorithmica.org/cs/graph-traversals/dfs/
+
+const int maxn = 1e5;
+bool used[maxn]; // тут будем отмечать посещенные вершины
+
+void dfs(int v) {
+    used[v] = true;
+    for (int u : g[v])
+        if (!used[u])
+            dfs(u);
+}
+///////////////////////////////////////////////////////
+int tin[maxn], tout[maxn];
+int t = 0; // таймер
+
+void dfs(int v) {
+    tin[v] = t++;
+    for (int u : g[v])
+        if (!used[u])
+            dfs(u);
+    tout[v] = t; // иногда счетчик тут тоже увеличивают
+}
